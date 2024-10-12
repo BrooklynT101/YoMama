@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <title>Yo Mama Jokes</title>
+        <script src="/js/external/vue.global.js"></script>
+        <script src="/js/external/axios.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Bebas+Neue&family=Londrina+Sketch&family=Protest+Strike&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1>True Facts About Yo Mama</h1>
+        </header>
+        <main>
+            <div class="main">
+                <button class="big-red-button" @click="getNewJoke">Hit It!</button>
+                <p v-if="joke">{{ joke }}</p>
+                <p v-else></p>
+            </div>      
+        </main>
+        <script type="module" src="js/index.js"></script>
+        <footer>
+            Fat icons created by <a href="https://www.flaticon.com/free-icons/fat" title="fat icons"> Any Icon </a> - Flaticon
+        </footer>
+    </body>
+</html>

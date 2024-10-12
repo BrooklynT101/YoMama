@@ -1,0 +1,99 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: tomato;
+}
+
+header {
+    text-align: center;
+    width: 100%;
+    background: blanchedalmond;
+    font-family: "Protest Strike", sans-serif;
+    border-bottom: solid black;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    font-family: "Afacad Flux", sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Big red button styling */
+.big-red-button {
+    background-color: #ff0000; /* Red color */
+    color: white;              /* White text */
+    font-size: 24px;           /* Larger font size */
+    padding: 20px 40px;        /* Padding to make the button bigger */
+    border: none;              /* Remove the default border */
+    border-radius: 12px;       /* Slightly rounded corners */
+    cursor: pointer;           /* Pointer cursor on hover */
+    box-shadow: 0 8px #b30000; /* Shadow to create a 3D effect */
+    transition: all 0.1s ease; /* Smooth transition for the press effect */
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: absolute;
+    top: 400px;
+}
+
+/* When hovering over the button */
+.big-red-button:hover {
+    background-color: #ff4d4d; /* Slightly lighter red on hover */
+}
+
+/* Pressed state of the button */
+.big-red-button:active {
+    transform: translateY(8px); /* Press the button down */
+    box-shadow: 0 2px #b30000;  /* Adjust shadow to simulate pressing in */
+}
+
+/* Animation for the joke text */
+@keyframes fadeZoomIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5); /* Start small */
+    }
+    60% {
+        opacity: 1;
+        transform: scale(1.2); /* Zoom in */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* Settle back to normal size */
+    }
+}
+
+/* Style for the joke paragraph */
+p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 35px;
+    margin-top: 20px;
+    text-align: center;
+    color: azure;
+    animation: fadeZoomIn 0.6s ease; /* Apply the animation */
+}
+
+/* Hide the joke text initially */
+.hidden {
+    display: none;
+}
